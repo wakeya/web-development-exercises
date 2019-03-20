@@ -15,11 +15,15 @@
     .two {min-width: 500px;}
     .three {min-width: 300px;max-width: 600px;} */
 
-    p {background-color: #ececec;height: 200px;float: left;}
+    /* p {background-color: #ececec;height: 200px;float: left;}
     .one {max-height: 100px;}
     .two {min-height: 100px;}
-    .three {max-height: 200px;min-height: 100px;background-color: #acacac;}
+    .three {max-height: 200px;min-height: 100px;background-color: #acacac;} */
     /* 这个属性在ie6中是不兼容 */
+
+  p {background-color: #ececec;height: auto;width: 200px;}
+  span {background-color: #acacac; width: 200px;height: 100px;}
+
   </style>
 </head>
 <body>
@@ -28,9 +32,14 @@
   <p class="two">盒子模型最大宽度min-width:500px;</p>
   <p class="three">盒子模型最大最小宽度min-width和max-width;</p> -->
 
-  <p>盒子模型高度width:200px;</p>
+  <!-- <p>盒子模型高度width:200px;</p>
   <p class="one">盒子模型最大宽度max-height:100px;</p>
   <p class="two">盒子模型最大宽度min-height:100px;</p>
-  <p class="three">盒子模型最大最小高度min-height和max-height;</p>
+  <p class="three">盒子模型最大最小高度min-height和max-height;</p> -->
+
+  <!-- 高宽度属性适用于 块元素和替换元素 -->
+  <p>盒子模型高度height宽度width</p>
+  <span>盒子模型高度height宽度width</span>
+
 </body>
 </html>
