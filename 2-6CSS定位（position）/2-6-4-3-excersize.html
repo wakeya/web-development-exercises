@@ -6,6 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <style type="text/css" media="screen">
+  *{
+    margin: 0;
+    padding: 0;
+  }
       .content{
         width:100%;
         height:4043px;
@@ -14,15 +18,23 @@
       }
       .adleft{
         width: 225px;
-        height: 365px;
-        background: url("http://climg.mukewang.com/5a3383c70001f1b702240364.png") center left no-repeat;
-        position: sticky;
+        height: 364px;
+        background: url("http://climg.mukewang.com/5a3383c70001f1b702240364.png") no-repeat center center;
+        position: fixed;
+        /* 靠左，上下居中 */
+        top: 50%;
+        margin-top:-182px;
+        left: 0px;
       }
       .adright{
         width: 225px;
-        height: 365px;
-        background: url("http://climg.mukewang.com/5a3383d00001a3dd02240364.png") center right no-repeat;
+        height: 364px;
+        background: url("http://climg.mukewang.com/5a3383d00001a3dd02240364.png") no-repeat center center;
         position: fixed;
+        /* 靠右上下居中 */
+        top: 50%;
+        margin-top:-182px;
+        right: 0px;
       }
   </style>
 </head>
