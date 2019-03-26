@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>仿慕课网页头页脚跟随效果</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        .header{
+            width:100%;
+            position: fixed;
+            height: 100px;
+            background: #414141;
+            text-align: center;
+            font-size: 16px;
+            line-height: 100px;
+
+        }
+        .nav {
+          width: 300px;
+          height: 100px;
+          background-image: url("http://climg.mukewang.com/58c0d2d900016ce303000100.png");
+        }
+
+        .navlist {
+          /* width: 600px; */
+          line-height: 100px;
+          position: absolute;
+          top: 0;
+          right: 10%;
+        }
+
+        .navlist ul {
+          word-spacing: 5em;
+        }
+
+        .navlist ul li {
+          line-height: 100px;
+          list-style-type: none;
+          display: inline-block;
+          margin: 0 auto;
+        }
+
+
+        .container{
+            width: 100%;
+            height: auto;
+            /* background: #4c77f2; */
+            margin: 0 auto;
+            padding-top: 100px;
+            text-align: center;
+            padding-bottom: 100px;
+        }
+        .left{
+            width:50%;
+            height: 1100px;
+            float:left;
+            background: #00CCFF;
+            color: #fff;
+        }
+         .right{
+             width: 50%;
+             height: 1100px;
+             float:right;
+             background: #00CCFF;
+             color: #fff;
+         }
+         .left .left_title {
+           font-size: 1.3em;
+           font-weight: bold;
+           margin-top: 20%;
+           margin-left: 30%;
+           text-align: left;
+           color: black;
+         }
+         .left ul {
+           line-height: 4em;
+           margin-left: 30%;
+           text-align: left;
+           list-style-type: none;
+         }
+         .left ul li {
+           color: black;
+         }
+         .left ul li span {
+           color: black;
+           background: pink;
+         }
+         .right .right_title {
+           font-size: 1.3em;
+           font-weight: bold;
+           margin-top: 20%;
+           margin-left: 20%;
+           text-align: left;
+           color: black;
+         }
+         .right ul {
+           width: 200px;
+           line-height: 4em;
+           margin-left: 20%;
+           text-align: left;
+           list-style-type: none;
+
+         }
+         .right ul li {
+           color: black;
+           display: inline-block;
+         }
+
+
+
+
+        .footer{
+            width: 100%;
+            height: 100px;
+            background: #333;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 16px;
+            line-height: 100px;
+            position: fixed;
+            bottom: 0;
+        }
+        .footer ul{
+          word-spacing: 6em;
+
+        }
+        .footer ul li {
+          line-height: 100px;
+          list-style-type: none;
+          display: inline-block;
+          margin: 0 auto;
+        }
+        /* 去掉下划线 */
+        .footer ul li a{
+          text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+      <div class="nav"></div>
+      <div class="navlist">
+        <ul>
+          <li>课程</li>
+          <li>职业路径</li>
+          <li>实战</li>
+          <li>猿问</li>
+          <li>手记</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+        <div class="left">
+          <div class="left_title">
+            课程推荐
+          </div>
+          <ul>
+            <li><span>职业路径</span>&nbsp;&nbsp;HTML5与CSS3动态网页</li>
+            <li><span>职业路径</span>&nbsp;&nbsp;零基础入门Android语法与界面</li>
+            <li><span>职业路径</span>&nbsp;&nbsp;ios基础语法与常用控件</li>
+            <li><span>职业路径</span>&nbsp;&nbsp;PHP入门开发</li>
+            <li><span>职业路径</span>&nbsp;&nbsp;JAVA入门开发</li>
+          </ul>
+
+        </div>
+        <div class="right">
+          <div class="right_title">
+            相关课程
+          </div>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Jquery</li>
+            <li>移动端基础</li>
+            <li>移动端APP开发</li>
+          </ul>
+
+        </div>
+    </div>
+    <div class="footer">
+      <ul>
+        <li><a href="#">网站首页</a></li>
+        <li><a href="#">企业合作</a></li>
+        <li><a href="#">人才招聘</a></li>
+        <li><a href="#">联系我们</a></li>
+        <li><a href="#">常见问题</a></li>
+        <li><a href="#">友情链接</a></li>
+      </ul>
+    </div>
+</body>
+</html>
