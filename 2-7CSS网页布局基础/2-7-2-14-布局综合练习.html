@@ -19,7 +19,7 @@
     .contain{
       width: 1010px;
       height: 600px;
-      background-color: green;
+      /* background-color: green; */
       position: relative;
       top: 12%;
       margin: 0 auto;
@@ -27,27 +27,55 @@
     .top{
       width: 1010px;
       height: 350px;
-      background-color: blue;
+      background-color: #66cccc;
       position: relative;
       margin: 0 auto;
     }
-    .top img{
-      width: 360px;
+
+    .top ul{
+      width: 1010px;
       height: 215px;
-      background-color: red;
+      /* background-color: red; */
       position: absolute;
       top: 0;
       bottom: 0;
       left: 0;
       right: 0;
-      margin: auto auto;
-    }
-    .top ul{
-      word-spacing: 5em;
+      margin: auto;
     }
     .top ul li{
+      width: 360px;
+      height: 215px;
       list-style-type: none;
       display: inline-block;
+      /* 应该有更好的方式，现在想到的是通过计算实现居中的效果 */
+      margin-left: 9.5%;
+    }
+    .bottom {
+      width: 1010px;
+      height: 250px;
+      position: relative;
+      margin: 0 auto;
+      background-color: #FFCCCC;
+    }
+    .bottom ul{
+      width: 1010px;
+      height: 60px;
+      /* background-color: red; */
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    .bottom ul li{
+      width: 200px;
+      height: 60px;
+      list-style-type: none;
+      display: inline-block;
+      /* 应该有更好的方式，现在想到的是通过计算实现居中的效果 */
+      margin-left: 10.15%;
     }
   </style>
 </head>
@@ -62,7 +90,11 @@
         </ul>
       </div>
       <div class="bottom">
-
+        <ul>
+          <li><img src="http://climg.mukewang.com/58c0f81d0001fe4402000060.jpg"/></li>
+          <li><img src="http://climg.mukewang.com/58c0f8220001dfce02000060.jpg"/></li>
+          <li><img src="http://climg.mukewang.com/58c0f8780001c74602000060.jpg"></li>
+        </ul>
       </div>
     </div>
   </div>
