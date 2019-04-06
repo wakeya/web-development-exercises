@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>圣杯布局练习：仿慕课网页头页脚课程列表+登录效果</title>
+  <style>
+    *{
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+        body {
+            min-width: 1250px;
+        }
+
+        .header,
+        .footer {
+            float: left;
+            width: 100%;
+            background: #000;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        .nav {
+          width: 300px;
+          height: 100px;
+          background-image: url("http://climg.mukewang.com/58c0d2d900016ce303000100.png");
+        }
+
+        .navlist {
+          /* width: 600px; */
+          line-height: 100px;
+          position: absolute;
+          top: 0;
+          right: 10%;
+        }
+
+        .navlist ul {
+          word-spacing: 5em;
+        }
+
+        .navlist ul li {
+          line-height: 100px;
+          list-style-type: none;
+          display: inline-block;
+          margin: 0 auto;
+        }
+
+        .navlist ul li a{
+          text-decoration:none;
+        }
+        .navlist ul li a:hover{
+          color:orange;
+        }
+
+
+        .container{
+            padding: 0 300px 0 350px;
+            min-width: 600px;
+        }
+
+        .left,
+        .middle,
+        .right {
+            position: relative;
+            float: left;
+            min-height: 300px;
+        }
+
+        .middle {
+            width: 100%;
+            height: 1100px;
+            background: #FFCCCC;
+        }
+
+        .left {
+            /* margin-left:-100%;可以让div盒子上移 */
+            margin-left: -100%;
+            left: -350px;
+            width: 350px;
+            height: 1100px;
+            background: #FFCC99;
+        }
+
+        .right {
+            margin-left: -300px;
+            right: -300px;
+            width: 300px;
+            height: 1100px;
+            background: #99CCFF;
+        }
+
+         .left .left_title {
+           font-size: 1.3em;
+           font-weight: bold;
+           margin-top: 30%;
+           margin-left: 10%;
+           text-align: left;
+           color: black;
+         }
+         .left ul {
+           line-height: 4em;
+           margin-left: 10%;
+           text-align: left;
+           list-style-type: none;
+         }
+         .left ul li {
+           color: black;
+         }
+         .left ul li span {
+           color: black;
+           background: pink;
+         }
+         .middle img {
+           position: absolute;
+           margin-left: 50%;
+           margin-top: 10%;
+           left: -300px;
+         }
+         .right .right_title {
+           font-size: 1.3em;
+           font-weight: bold;
+           margin-top: 30%;
+           margin-left: 10%;
+           text-align: left;
+           color:black;
+         }
+         .right .input{
+           display: block;
+           margin-top: 2em;
+           margin-left: 10%;
+           width:200px;
+         }
+         .right .input input{
+           height:2em;
+           width:200px;
+           border:0;
+         }
+         .right .input .login{
+           background:red;
+           border:0 ;
+         }
+
+        .footer ul{
+          word-spacing: 6em;
+
+        }
+        .footer ul li {
+          line-height: 100px;
+          list-style-type: none;
+          display: inline-block;
+          margin: 0 auto;
+        }
+        /* 去掉下划线 */
+        .footer ul li a{
+          text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="nav"></div>
+    <div class="navlist">
+      <ul>
+        <li><a href="#">课程</a></li>
+        <li><a href="#">职业路径</a></li>
+        <li><a href="#">实战</a></li>
+        <li><a href="#">猿问</a></li>
+        <li><a href="#">手记</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="middle">
+      <img src="http://climg.mukewang.com/590037e00001fab706000400.jpg" alt="">
+
+    </div>
+    <div class="left">
+      <div class="left_title">
+        课程推荐
+      </div>
+      <ul>
+        <li><span>职业路径</span>&nbsp;&nbsp;HTML5与CSS3动态网页</li>
+        <li><span>职业路径</span>&nbsp;&nbsp;零基础入门Android语法与界面</li>
+        <li><span>职业路径</span>&nbsp;&nbsp;ios基础语法与常用控件</li>
+        <li><span>职业路径</span>&nbsp;&nbsp;PHP入门开发</li>
+        <li><span>职业路径</span>&nbsp;&nbsp;JAVA入门开发</li>
+      </ul>
+    </div>
+    <div class="right">
+      <div class="right_title">
+        登录
+      </div>
+      <div class="input">
+        <input type="text" name="name" value="" placeholder="请输入登录邮箱/手机号">
+      </div>
+      <div class="input">
+        <input type="text" name="pwd" value="" placeholder="6-16为密码，区分大小写，不能用空格">
+      </div>
+      <div class="input">
+        <input class="login" type="button" name="pwd" value="登录">
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <ul>
+      <li><a href="#">网站首页</a></li>
+      <li><a href="#">企业合作</a></li>
+      <li><a href="#">人才招聘</a></li>
+      <li><a href="#">联系我们</a></li>
+      <li><a href="#">常见问题</a></li>
+      <li><a href="#">友情链接</a></li>
+    </ul>
+  </div>
+</body>
+
+</html>
