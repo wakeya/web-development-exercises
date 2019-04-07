@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>CSS布局</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding:0;
+		}
+		/*此处写代码*/
+    .header{
+      width:100%;
+      height:100px;
+      /* background-color:#eee; */
+      border: 2px solid #eee;
+    }
+    .header img{
+      width:200px;
+      height:80px;
+      padding-top:10px;
+      padding-left:100px;
+    }
+    .header .logo {
+      float:left;
+    }
+    .header .nav{
+      float:right;
+    }
+    .header .nav ul{
+      padding-right: 100px;
+    }
+    .header .nav ul li{
+      float:left;
+      list-style:none;
+      width: 80px;
+      height: 100px;
+      line-height: 100px;
+      font-size: 15px;
+      font-weight: bolder;
+      color: #7d7d7d;
+    }
+	</style>
+</head>
+<body>
+	<!-- 此处写代码 -->
+  <div class="header">
+    <div class="logo">
+      <img src="http://climg.mukewang.com/595dd5120001736902000080.png" alt="logo">
+    </div>
+    <div class="nav">
+      <ul>
+        <li>前端</li>
+        <li>后端</li>
+        <li>移动端</li>
+        <li>数据库</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
