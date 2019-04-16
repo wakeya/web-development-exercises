@@ -45,13 +45,33 @@ body{
   height: 600px;
   position: absolute;
   top: 80px;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 /* send message */
 .message {
   width: 510px;
-  height: 376px;
-  background-color: red;
+  height: 396px;
+  /* background-color: red; */
   position:absolute;
-  top: 80px;
+  /* top: 211px; */
+  top: 191px;
+  left: 50%;
+  margin-left: -255px;
+}
+.message .message-content {
+  width: 506px;
+  border: 2px solid #ffffff;
+  margin-top: 22px;
+  font-size: 1.25em;
+  opacity: 0.3;
+  color: #ffffff;
+}
+.message .message-content:nth-child(1){
+  height: 41px;
+}
+.message .message-content:nth-child(2){
+  height: 41px;
+}
+.message .message-content:nth-child(3){
+  height: 41px;
 }
