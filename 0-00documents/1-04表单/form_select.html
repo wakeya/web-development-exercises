@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>表单select</title>
+  </head>
+  <body>
+    <h1 align="center">注册信息</h1>
+    <hr color="#336699">
+    <form class="form1" action="action.php" method="post" width="100%" target="_blank">
+      <table bgcolor="#f2f2f2" align="center" width="600rem">
+        <tr>
+          <td align="right">姓名：</td>
+          <td align="left">
+            <input type="text" name="username" size="25" maxlength="6" placeholder="请输入姓名" />
+          </td>
+        </tr>
+        <tr>
+          <td  align="right">邮箱：</td>
+          <td align="left">
+            <input type="text" name="email" value="@163.com" />
+          </td>
+        </tr>
+        <tr>
+          <td align="right">密码：</td>
+          <td align="left">
+            <input type="password" name="pwd" placeholder="请输入密码" />
+          </td>
+        </tr>
+        <tr>
+          <td align="right">确认密码：</td>
+          <td align="left">
+            <input type="password" name="pwd2" placeholder="请再输入密码" />
+          </td>
+        </tr>
+        <tr>
+          <td align="right">上传照片：</td>
+          <td align="left">
+            <input type="file" name="file" value="未选择任何文件" />
+          </td>
+        </tr>
+        <tr>
+          <td align="right">性别：</td>
+          <td align="left">
+            <!-- 单选框只能选择一个，则使用同一个name值，否则的话能够选择多个 -->
+            男<input type="radio" name="sex" value="男" checked/>
+            女<input type="radio" name="sex" value="女"/>
+            保密<input type="radio" name="sex" value="保密"/>
+          </td>
+        </tr>
+        <tr>
+          <td align="right">爱好：</td>
+          <!-- 复选框的name值相同时不影响选择，不会和单选框一样
+               value值是传递给服务器的值，一般建议一组复选框使用相同的name值，这样服务器在接收时，易分辨是哪组数据
+          -->
+          <td align="left">
+            读书<input type="checkbox" name="box1" value="readbood" checked />
+            唱歌<input type="checkbox" name="box1" value="sing" />
+            跳舞<input type="checkbox" name="box1" value="dance" />
+          </td>
+        </tr>
+        <tr>
+          <td align="right">城市：</td>
+          <!-- 复选框的name值相同时不影响选择，不会和单选框一样
+               value值是传递给服务器的值，一般建议一组复选框使用相同的name值，这样服务器在接收时，易分辨是哪组数据
+          -->
+          <td align="left">
+            <!-- 下拉菜单形式 -->
+            <select class="select1" name="city">
+              <option value="xz">--请选择--</option>
+              <option value="北京" selected>北京</option>
+              <option value="天津">天津</option>
+              <option value="河北">河北</option>
+              <option value="上海">上海</option>
+              <option value="福建">福建</option>
+              <option value="厦门">厦门</option>
+            </select>
+            <!-- 列表形式 -->
+            <select class="select1" name="city2" size="5" multiple>
+              <option value="北京">北京</option>
+              <option value="天津">天津</option>
+              <option value="河北">河北</option>
+              <option value="上海">上海</option>
+              <option value="福建">福建</option>
+              <option value="厦门">厦门</option>
+            </select>
+            <!-- 分组下拉的形式 -->
+            <select class="select1" name="city3">
+              <option>--请选择--</option>
+              <optgroup label="华北">
+              <option value="北京" selected>北京</option>
+              <option value="天津">天津</option>
+              <option value="河北">河北</option>
+              </optgroup>
+              <optgroup label="华东">
+              <option value="上海">上海</option>
+              <option value="福建">福建</option>
+              <option value="厦门">厦门</option>
+              </optgroup>
+            </select>
+            <!-- 分组列表的形式 只能选择3个-->
+            <select class="select1" name="city3" size="3" multiple>
+              <option>--请选择--</option>
+              <optgroup label="华北">
+              <option value="北京" selected>北京</option>
+              <option value="天津">天津</option>
+              <option value="河北">河北</option>
+              </optgroup>
+              <optgroup label="华东">
+              <option value="上海">上海</option>
+              <option value="福建">福建</option>
+              <option value="厦门">厦门</option>
+              </optgroup>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td align="right">简介：</td>
+          <!-- rows显示的行数，cols显示的列数，用于规定textarea的尺寸 -->
+          <td align="left">
+            <textarea name="jj" rows="6" cols="50" placeholder="请输入个人简介信息">aa</textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <input type="button" name="button" value="来点我" />
+            <input type="submit" name="submit_button" value="提交" />
+            <input type="reset" name="reset_button" value="重置" />
+            <!-- 图像域和提交按钮相同，具有提交表单信息的作用 -->
+            <input type="image" name="image_button" src="image/image-button.png" value="">
+          </td>
+        </tr>
+        <tr>
+          <td><input type="hidden" name="hidden" value="这是一个用户注册信息"></td>
+          <td></td>
+        </tr>
+      </table>
+    </form>
+
+  </body>
+</html>

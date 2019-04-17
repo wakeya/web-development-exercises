@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>圣杯布局</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        min-width: 700px;
+    }
+
+    .header,
+    .footer {
+        float: left;
+        width: 100%;
+        background: #ddd;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .container {
+        padding: 0 220px 0 200px;
+    }
+
+    .left,
+    .middle,
+    .right {
+        position: relative;
+        float: left;
+        min-height: 300px;
+    }
+
+    .left {
+        margin-left: -100%;
+        left: -200px;
+        width: 200px;
+        background: #f00;
+    }
+
+    .right {
+        margin-left: -220px;
+        right: -220px;
+        width: 220px;
+        background: #30a457;
+    }
+
+    .middle {
+        width: 100%;
+        background: #1a5acd;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h4>header</h4>
+    </div>
+    <div class="container">
+        <div class="middle">
+            <h4>middle</h4>
+            <p>
+                这是页面的主体内容 这是页面的主体内容 这是页面的主体内容 这是页面的主体内容 这是页面的主体内容 这是页面的主体内容 这是页面的主体内容 这是页面的主体内容
+            </p>
+        </div>
+        <div class="left">
+            <h4>left</h4>
+            <p>
+                这是页面的左边 这是页面的左边 这是页面的左边 这是页面的左边 这是页面的左边 这是页面的左边
+            </p>
+        </div>
+        <div class="right">
+            <h4>right</h4>
+            <p>
+                这是页面的右边 这是页面的右边 这是页面的右边 这是页面的右边
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <h4>footer</h4>
+    </div>
+</body>
+
+</html>

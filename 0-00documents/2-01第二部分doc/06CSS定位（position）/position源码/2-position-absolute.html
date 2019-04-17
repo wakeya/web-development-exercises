@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>position-absolute</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+    /*    .block {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        border: 2px solid black;
+    }
+
+    .block:nth-child(1) {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        border-color: blue;
+        z-index: 999999;
+    }
+
+    .block:nth-child(2) {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 50%;
+        height: 50%;
+        border-color: red;
+        z-index: 1;
+    }
+*/
+
+    .parent {
+        position: relative;
+        width: 200px;
+        height: 150px;
+        background: blue;
+    }
+
+    .child {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        background: red;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        margin: auto auto;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="block">A</div>
+    <div class="block">B</div>
+    <div class="block">C</div> -->
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+
+</html>
