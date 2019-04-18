@@ -5,6 +5,8 @@
 body{
   color: #ffffff;
 }
+
+
  /* 顶部  */
 .header{
   width: 100%;
@@ -27,10 +29,12 @@ body{
   display: inline-block;
 }
 .header ul li a{
-  font: normal bold 12px/80px Microsoft YaHei UI;
+  font: normal bold 12px/80px "Microsoft YaHei UI";
   color: #ffffff;
   text-decoration: none;
 }
+
+
 
 /*  banner图  */
 .banner img{
@@ -61,17 +65,53 @@ body{
 .message .message-content {
   width: 506px;
   border: 2px solid #ffffff;
-  margin-top: 22px;
-  font-size: 1.25em;
-  opacity: 0.3;
-  color: #ffffff;
+  margin-top: 20px;
+  font: normal normal normal 12px "Microsoft YaHei UI";
+  opacity: 0.5;
+  background-color: transparent;  /* input背景透明 */
+  color:#ffffff;
 }
 .message .message-content:nth-child(1){
-  height: 41px;
+  height: 42px;
 }
 .message .message-content:nth-child(2){
-  height: 41px;
+  height: 42px;
 }
 .message .message-content:nth-child(3){
-  height: 41px;
+  height: 42px;
+}
+.message .message-content:nth-child(3){
+  height: 119ipx;
+}
+.message .send-message {
+  width: 146px;
+  height: 42px;
+  color:#ffffff;
+  /* margin: 0 auto; */
+  left: 50%;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 180px;
+  font: normal normal normal 12px "Microsoft YaHei UI";
+  background-color: transparent;  /* input背景透明 */
+}
+/* 通过伪类选择器 改变input标签的placeholder字体颜色 */
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #ffffff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #ffffff;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #ffffff;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #ffffff;
+}
+
+
+/*about区*/
+.about h1{
+  font: normal normal normal 38px "Microsoft YaHei UI";
+  color: #000;
 }
