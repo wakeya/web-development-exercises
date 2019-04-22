@@ -2,9 +2,9 @@
     padding: 0;
 	  margin:0;
 }
-body{
+/* body{
   color: #ffffff;
-}
+} */
 
 
  /* 顶部  */
@@ -126,5 +126,5 @@ body{
 }
 .about .about-two hr{
   width: 20px;
-  
+
 }
