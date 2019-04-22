@@ -1,6 +1,6 @@
 *{
     padding: 0;
-	margin:0;
+	  margin:0;
 }
 body{
   color: #ffffff;
@@ -37,6 +37,10 @@ body{
 
 
 /*  banner图  */
+.banner {
+  width: 100%;
+  height: 600px;
+}
 .banner img{
   width: 100%;
   height: 600px;
@@ -111,7 +115,16 @@ body{
 
 
 /*about区*/
-.about h1{
+.about {
+  width: 100%;
+  height: 737px;
+  background-color: #acacac;
+}
+.about .about-one h1{
   font: normal normal normal 38px "Microsoft YaHei UI";
   color: #000;
+}
+.about .about-two hr{
+  width: 20px;
+  
 }
