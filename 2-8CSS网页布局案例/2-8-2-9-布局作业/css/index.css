@@ -118,13 +118,49 @@
 .about {
   width: 100%;
   height: 737px;
-  background-color: #acacac;
+  background-color: #fff;
+}
+.about .about-one{
+  height: 121px;
 }
 .about .about-one h1{
+  width: 132px;
+  height: 49px;
   font: normal normal normal 38px "Microsoft YaHei UI";
   color: #000;
+  margin-top: 70px;
+  position: absolute;
+  left: 50%;
+  margin-left: -66px;
+}
+.about .about-two{
+  height: 26px;
 }
 .about .about-two hr{
-  width: 20px;
-
+  width: 40px;
+  height: 2px;
+  border: 0;
+  background-color: #07cbc9;
+  margin-top: 14px;
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+}
+.about .about-three{
+  height: 108px;
+}
+.about .about-three p{
+  width: 480px;
+  font: normal normal normal 15px "Microsoft YaHei UI";
+  color: #797979;
+  position: absolute;
+  margin-top: 12px;
+  left: 50%;
+  margin-left: -240px;
+  text-align: center;
+  vertical-align: middle;
+}
+.about .about-four{
+  height: 480px;
+  background-color: blue;
 }
