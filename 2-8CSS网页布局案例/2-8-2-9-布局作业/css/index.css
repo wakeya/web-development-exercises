@@ -1,168 +1,443 @@
-*{
+* {
     padding: 0;
-	  margin:0;
+    margin: 0;
 }
-/* body{
-  color: #ffffff;
-} */
 
+body{
+    width: 1920px;
+    position: relative;
+    margin: 0 auto;
+}
 
- /* 顶部  */
-.header{
-  width: 100%;
-  height: 80px;
-  background-color: #07cbc9;
+.clear {
+    clear: both;
 }
-.header img{
-  float: left;
-  margin-left: 158px;
-  margin-top: 16px;
+
+/* 顶部  */
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: #07cbc9;
 }
-.header ul{
-  float: right;
-  list-style: none;
-  width: 470px;
-  margin-right: 110px;
-  word-spacing: 6px;
+
+.header img {
+    float: left;
+    margin-left: 158px;
+    margin-top: 16px;
 }
-.header ul li{
-  display: inline-block;
+
+.header ul {
+    float: right;
+    list-style: none;
+    width: 470px;
+    margin-right: 110px;
+    word-spacing: 6px;
 }
-.header ul li a{
-  font: normal bold 12px/80px "Microsoft YaHei UI";
-  color: #ffffff;
-  text-decoration: none;
+
+.header ul li {
+    display: inline-block;
 }
-.header ul li:hover{
-  background-color: #000;
+
+.header ul li a {
+    font: normal bold 12px/80px "Microsoft YaHei UI";
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header ul li:hover {
+    background-color: #000;
 }
 
 
 /*  banner图  */
 .banner {
-  width: 100%;
-  height: 600px;
+    width: 100%;
+    height: 600px;
 }
-.banner img{
-  width: 100%;
-  height: 600px;
-  position: relative;
+
+.banner img {
+    width: 100%;
+    height: 600px;
+    position: relative;
 }
+
 /* 遮罩层 */
 .topLayer {
-  background-color: #000000;
-  width: 100%;
-  height: 600px;
-  position: absolute;
-  top: 80px;
-  opacity: 0.4;
+    background-color: #000;
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 80px;
+    opacity: 0.4;
 }
+
 /* send message */
 .message {
-  width: 510px;
-  height: 396px;
-  /* background-color: red; */
-  position:absolute;
-  /* top: 211px; */
-  top: 191px;
-  left: 50%;
-  margin-left: -255px;
+    width: 510px;
+    height: 396px;
+    /* background-color: red; */
+    position: absolute;
+    /* top: 211px; */
+    top: 191px;
+    left: 50%;
+    margin-left: -255px;
 }
+
 .message .message-content {
-  width: 506px;
-  border: 2px solid #ffffff;
-  margin-top: 20px;
-  font: normal normal normal 12px "Microsoft YaHei UI";
-  opacity: 0.5;
-  background-color: transparent;  /* input背景透明 */
-  color:#ffffff;
+    width: 506px;
+    border: 2px solid #ffffff;
+    margin-top: 20px;
+    font: normal normal normal 12px "Microsoft YaHei UI";
+    opacity: 0.5;
+    background-color: transparent; /* input背景透明 */
+    color: #ffffff;
 }
-.message .message-content:nth-child(1){
-  height: 42px;
+
+.message .message-content:nth-child(1) {
+    height: 42px;
 }
-.message .message-content:nth-child(2){
-  height: 42px;
+
+.message .message-content:nth-child(2) {
+    height: 42px;
 }
-.message .message-content:nth-child(3){
-  height: 42px;
+
+.message .message-content:nth-child(3) {
+    height: 42px;
 }
-.message .message-content:nth-child(4){
-  height: 119px;
+
+.message .message-content:nth-child(4) {
+    height: 119px;
 }
+
 .message .send-message {
-  width: 146px;
-  height: 42px;
-  color:#ffffff;
-  /* margin: 0 auto; */
-  left: 50%;
-  text-align: center;
-  vertical-align: middle;
-  margin-left: 180px;
-  font: normal normal normal 12px "Microsoft YaHei UI";
-  background-color: transparent;  /* input背景透明 */
+    width: 146px;
+    height: 42px;
+    color: #ffffff;
+    /* margin: 0 auto; */
+    left: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 180px;
+    font: normal normal normal 12px "Microsoft YaHei UI";
+    background-color: transparent; /* input背景透明 */
 }
+
 /* 通过伪类选择器 改变input标签的placeholder字体颜色 */
 ::-webkit-input-placeholder { /* WebKit browsers */
-    color:    #ffffff;
+    color: #ffffff;
 }
+
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    #ffffff;
+    color: #ffffff;
 }
+
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    #ffffff;
+    color: #ffffff;
 }
+
 :-ms-input-placeholder { /* Internet Explorer 10+ */
-    color:    #ffffff;
+    color: #ffffff;
 }
 
 
 /*about区*/
 .about {
-  width: 100%;
-  height: 737px;
-  background-color: #fff;
+    width: 100%;
+    height: 737px;
+    background-color: #fff;
 }
-.about .about-one{
-  height: 121px;
+
+.about .about-one {
+    height: 121px;
 }
-.about .about-one h1{
-  width: 132px;
-  height: 49px;
-  font: normal normal normal 38px "Microsoft YaHei UI";
-  color: #000;
-  margin-top: 70px;
-  position: absolute;
-  left: 50%;
-  margin-left: -66px;
+
+.about .about-one h1 {
+    width: 132px;
+    height: 49px;
+    font: normal normal normal 38px "Microsoft YaHei UI";
+    color: #000;
+    margin-top: 70px;
+    position: absolute;
+    left: 50%;
+    margin-left: -66px;
 }
-.about .about-two{
-  height: 26px;
+
+.about .about-two {
+    height: 26px;
 }
-.about .about-two hr{
-  width: 40px;
-  height: 2px;
-  border: 0;
-  background-color: #07cbc9;
-  margin-top: 14px;
-  position: absolute;
-  left: 50%;
-  margin-left: -20px;
+
+.about .about-two hr {
+    width: 40px;
+    height: 2px;
+    border: 0;
+    background-color: #07cbc9;
+    margin-top: 14px;
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
 }
-.about .about-three{
-  height: 110px;
+
+.about .about-three {
+    height: 110px;
 }
-.about .about-three p{
-  width: 480px;
-  font: normal normal normal 15px "Microsoft YaHei UI";
-  color: #797979;
-  position: absolute;
-  margin-top: 12px;
-  left: 50%;
-  margin-left: -240px;
-  text-align: center;
-  vertical-align: middle;
+
+.about .about-three p {
+    width: 480px;
+    font: normal normal normal 15px "Microsoft YaHei UI";
+    color: #797979;
+    position: absolute;
+    margin-top: 12px;
+    left: 50%;
+    margin-left: -240px;
+    text-align: center;
+    vertical-align: middle;
 }
-.about .about-four{
-  height: 480px;
-  background-color: blue;
+
+.about .about-four {
+    height: 480px;
+    position: relative;
+}
+
+.about .about-four .left {
+    width: 400px;
+    height: 400px;
+    left: 50%;
+    margin-left: -580px;
+    position: absolute;
+}
+
+.about .about-four .left h1{
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.about .about-four .left .about-us-msg {
+    margin-top: 5px;
+    width: 400px;
+    height: 296px;
+    border: 1px solid #acacac;
+    /*background-color: #fff;*/
+    /*opacity: 0.4;*/
+}
+
+.about .about-four .left .about-us-msg p{
+    margin: 30px 20px;
+}
+
+.about .about-four .left .about-us-msg .explore{
+    display: block;
+    width: 100px;
+    height: 49px;
+    line-height: 49px;
+    text-align: center;
+    margin: 30px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+}
+
+
+.about .about-four .center {
+    text-align: center;
+}
+
+.about .about-four .right {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    margin-right: -570px;
+    text-align: center;
+}
+
+.about .about-four {
+    height: 480px;
+    position: relative;
+}
+
+.about .students, .about .faculty {
+    position: relative;
+    border: 1px solid #07cbc9;
+    width: 200px;
+    height: 200px;
+}
+
+.about .about-five {
+    position: relative;
+}
+
+.about .about-five .about-five-1, .about .about-five .about-five-1 img{
+    width: 480px;
+    height: 396px;
+}
+
+.about .about-five .about-five-1 {
+    top: 0;
+    float: left;
+}
+
+.about .about-five .about-five-2 {
+    background-color: #07cbc9;
+    position: relative;
+}
+
+.about .about-five .about-five-2 .message{
+    width: 378px;
+    height: 322px;
+    color: #fff;
+    left: 0;
+    top: 0;
+    margin: 37px 51px;
+}
+
+.about .about-five .about-five-2 h1 {
+    font: normal normal normal 28px "Microsoft YaHei UI";
+}
+
+.about .about-five .about-five-2 p{
+    margin: 20px 0 10px 0;
+    color: #f7f5f5;
+}
+
+.about .about-five .about-five-2 span {
+    font: normal normal normal 14px "Microsoft YaHei UI";
+    color: #ddd9d4;
+}
+
+.about .about-five .about-five-2 .explore{
+    display: block;
+    width: 100px;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+    margin: 50px -50px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+.about .about-five .about-five-2 .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 25px 15px 25px;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+}
+.about .about-five .about-five-2 .triangle-1 {
+    border-color: transparent #07cbc9 transparent transparent;
+    left: -50px;
+}
+
+.about .about-five .about-five-2 .triangle-2 {
+    border-color: transparent  transparent transparent #07cbc9;
+    right: -50px;
+}
+
+.gallery {
+    width: 1140px;
+    height: 970px;
+    margin: 0 auto;
+}
+
+.gallery .gallery-msg {
+    width: 100%;
+    height: 264px;
+    position: relative;
+}
+
+.gallery .gallery-msg h1 {
+    width: 224px;
+    font: normal normal normal 38px "Microsoft YaHei UI";
+    color: #000;
+    text-align: center;
+    margin-top: 64px;
+    position: absolute;
+    left: 50%;
+    margin-left: -112px;
+}
+
+.gallery .gallery-msg .gallery-two {
+    height: 51px;
+    position: absolute;
+    text-align: center;
+    top: 102px;
+    left: 50%;
+    margin-left: -21px;
+
+}
+
+.gallery .gallery-msg .gallery-two hr {
+    width: 42px;
+    height: 2px;
+    border: 0;
+    background-color: #07cbc9;
+    margin-top: 25px;
+}
+
+.gallery .gallery-msg .gallery-three {
+    height: 110px;
+}
+
+.gallery .gallery-msg .gallery-three p {
+    width: 490px;
+    height: 60px;
+    font: normal normal normal 15px "Microsoft YaHei UI";
+    color: #797979;
+    position: absolute;
+    margin-top: 12px;
+    left: 50%;
+    margin-left: -245px;
+    text-align: center;
+    bottom: 51px;
+}
+
+.gallery .gallery-image-group-1 {
+    width: 1140px;
+    height: 302px;
+}
+
+.gallery .gallery-image-group-2 {
+    margin: 30px 0 66px 0;
+}
+
+.gallery .gallery-image-group-1 .gallery-image {
+    float: left;
+    width: 360px;
+    height: 302px;
+}
+
+.gallery .gallery-image-group-1 .gallery-image-2 {
+    margin: 0 30px;
+}
+
+.gallery .gallery-image-group-1 .gallery-image img {
+    width: 360px;
+    height: 241px;
+    display: block;
+}
+
+.gallery .gallery-image-group-1 .gallery-image .gallery-image-msg {
+    width: 345px;
+    height: 61px;
+    line-height: 61px;
+    color: #fff;
+    background-color: #000;
+    padding-left: 15px;
+}
+
+.footer {
+    width: 100%;
+    height: 80px;
+    background-color: #07cbc9;
+    color: #ffffff;
+    text-align: center;
+    line-height: 80px;
+    font-family: "微软雅黑", serif;
+    font-size: 16px;
 }
