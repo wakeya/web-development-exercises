@@ -9,6 +9,18 @@ body{
     margin: 0 auto;
 }
 
+.clear-fix:after{
+    content: '.';
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+/* 兼容IE浏览器 */
+.clear-fix{
+    zoom:1;
+}
+
 .clear {
     clear: both;
 }
@@ -29,9 +41,8 @@ body{
 .header ul {
     float: right;
     list-style: none;
-    width: 470px;
     margin-right: 110px;
-    word-spacing: 6px;
+    word-spacing: 20px;
 }
 
 .header ul li {
@@ -39,7 +50,7 @@ body{
 }
 
 .header ul li a {
-    font: normal bold 12px/80px "Microsoft YaHei UI";
+    font: normal bold 16px/80px "Microsoft YaHei UI";
     color: #ffffff;
     text-decoration: none;
 }
@@ -74,52 +85,38 @@ body{
 /* send message */
 .message {
     width: 510px;
-    height: 396px;
-    /* background-color: red; */
     position: absolute;
-    /* top: 211px; */
-    top: 191px;
+    top: 150px;
     left: 50%;
     margin-left: -255px;
 }
 
+
+.message .message-content-area {
+    height: 119px !important;
+}
+
 .message .message-content {
-    width: 506px;
+    width: 509px;
+    height: 41px;
     border: 2px solid #ffffff;
     margin-top: 20px;
-    font: normal normal normal 12px "Microsoft YaHei UI";
+    font: normal normal normal 16px "Microsoft YaHei UI";
     opacity: 0.5;
     background-color: transparent; /* input背景透明 */
     color: #ffffff;
 }
 
-.message .message-content:nth-child(1) {
-    height: 42px;
-}
-
-.message .message-content:nth-child(2) {
-    height: 42px;
-}
-
-.message .message-content:nth-child(3) {
-    height: 42px;
-}
-
-.message .message-content:nth-child(4) {
-    height: 119px;
-}
-
 .message .send-message {
-    width: 146px;
-    height: 42px;
+    width: 126px;
+    height: 41px;
     color: #ffffff;
-    /* margin: 0 auto; */
-    left: 50%;
     text-align: center;
     vertical-align: middle;
-    margin-left: 180px;
+    margin-left: 192px;
     font: normal normal normal 12px "Microsoft YaHei UI";
     background-color: transparent; /* input背景透明 */
+    margin-top: 24px !important;
 }
 
 /* 通过伪类选择器 改变input标签的placeholder字体颜色 */
@@ -148,22 +145,24 @@ body{
 }
 
 .about .about-one {
-    height: 121px;
+    height: 108px;
+    position: relative;
 }
 
 .about .about-one h1 {
-    width: 132px;
-    height: 49px;
+    width: 130px;
+    height: 50px;
     font: normal normal normal 38px "Microsoft YaHei UI";
     color: #000;
-    margin-top: 70px;
     position: absolute;
     left: 50%;
-    margin-left: -66px;
+    margin-left: -65px;
+    bottom: 0;
 }
 
 .about .about-two {
-    height: 26px;
+    height: 50px;
+    position: relative;
 }
 
 .about .about-two hr {
@@ -171,14 +170,16 @@ body{
     height: 2px;
     border: 0;
     background-color: #07cbc9;
-    margin-top: 14px;
+    margin-top: 24px;
     position: absolute;
     left: 50%;
     margin-left: -20px;
+    line-height: 50px;
 }
 
 .about .about-three {
-    height: 110px;
+    height: 100px;
+    position: relative;
 }
 
 .about .about-three p {
@@ -186,11 +187,9 @@ body{
     font: normal normal normal 15px "Microsoft YaHei UI";
     color: #797979;
     position: absolute;
-    margin-top: 12px;
     left: 50%;
     margin-left: -240px;
     text-align: center;
-    vertical-align: middle;
 }
 
 .about .about-four {
@@ -199,67 +198,134 @@ body{
 }
 
 .about .about-four .left {
-    width: 400px;
-    height: 400px;
+    top: 0;
+    width: 372px;
+    height: 350px;
     left: 50%;
-    margin-left: -580px;
+    margin-left: -520px;
     position: absolute;
 }
 
-.about .about-four .left h1{
-    margin-top: 5px;
-    margin-left: 30px;
+.about .about-four .left .about-us-msg-0{
+    height: 100px;
 }
 
-.about .about-four .left .about-us-msg {
+.about .about-four .left span{
+    display: block;
+    font-size: 32px;
     margin-top: 5px;
-    width: 400px;
-    height: 296px;
+    margin-left: 10px;
+}
+
+.about .about-four .left .about-us-msg{
+    margin-top: 5px;
+    width: 372px;
+    height: 250px;
     border: 1px solid #acacac;
-    /*background-color: #fff;*/
-    /*opacity: 0.4;*/
+    position: relative;
+}
+.about .about-four .left .about-us-msg-1 {
+    position: relative;
+}
+.about .about-four .left .about-us-msg-2 {
+    width: 372px;
+    height: 250px;
+    border: 1px solid #acacac;
+    position: absolute;
+    background-color: #fff;
+    opacity: 0.4;
 }
 
-.about .about-four .left .about-us-msg p{
-    margin: 30px 20px;
+.about .about-four .left .about-us-msg p, .about .about-four .left .about-us-msg .explore{
+    font-size: 16px;
+    margin: 30px 25px;
+    z-index: 999;
 }
 
 .about .about-four .left .about-us-msg .explore{
     display: block;
-    width: 100px;
-    height: 49px;
-    line-height: 49px;
+    width: 103px;
+    height: 45px;
+    line-height: 45px;
     text-align: center;
-    margin: 30px 20px;
     text-decoration: none;
-    font-size: 16px;
     color: #fff;
     background-color: #000;
 }
 
 
 .about .about-four .center {
+
     text-align: center;
+}
+
+.about .about-four .center img {
+    width: 568px;
+    height: 380px;
 }
 
 .about .about-four .right {
     position: absolute;
     top: 0;
-    right: 50%;
-    margin-right: -570px;
+    left: 50%;
+    margin-left: 319px;
     text-align: center;
 }
 
-.about .about-four {
-    height: 480px;
+.about .about-four .right .students, .about .about-four .right .faculty {
+    position: relative;
+    border: 1px solid #07cbc9;
+    width: 238px;
+    height: 145px;
+}
+
+.about .about-four .right .faculty {
+    margin-top: 30px;
+}
+
+.about .about-four .right .right-stu-fac-one{
+    height: 56px;
     position: relative;
 }
 
-.about .students, .about .faculty {
+.about .about-four .right .right-stu-fac-one h1{
+    font-size: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+}
+
+.about .about-four .right .students .right-stu-fac-one h1 {
+    margin-left: -39px;
+}
+
+.about .about-four .right .faculty .right-stu-fac-one h1 {
+    margin-left: -23px;
+}
+
+
+
+.about .about-four .right .right-stu-fac-two{
+    height: 47px;
     position: relative;
-    border: 1px solid #07cbc9;
-    width: 200px;
-    height: 200px;
+}
+
+.about .about-four .right .right-stu-fac-two hr{
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    left: 50%;
+    margin-left: -20px;
+    margin-top: 24px;
+    background-color: #07cbc9;
+    border: 0;
+}
+
+.about .about-four .right .right-stu-fac-three{
+    height: 42px;
+    position: relative;
+    font-size: 16px;
 }
 
 .about .about-five {
@@ -339,6 +405,7 @@ body{
     right: -50px;
 }
 
+/* gallery区 */
 .gallery {
     width: 1140px;
     height: 970px;
@@ -347,7 +414,6 @@ body{
 
 .gallery .gallery-msg {
     width: 100%;
-    height: 264px;
     position: relative;
 }
 
@@ -356,17 +422,17 @@ body{
     font: normal normal normal 38px "Microsoft YaHei UI";
     color: #000;
     text-align: center;
-    margin-top: 64px;
-    position: absolute;
+    padding-top: 64px;
+    position: relative;
     left: 50%;
     margin-left: -112px;
 }
 
 .gallery .gallery-msg .gallery-two {
     height: 51px;
-    position: absolute;
+    width: 42px;
+    position: relative;
     text-align: center;
-    top: 102px;
     left: 50%;
     margin-left: -21px;
 
@@ -377,11 +443,14 @@ body{
     height: 2px;
     border: 0;
     background-color: #07cbc9;
-    margin-top: 25px;
+    margin-top: 24px;
+    position: absolute;
 }
 
 .gallery .gallery-msg .gallery-three {
     height: 110px;
+    width: 100%;
+    position: relative;
 }
 
 .gallery .gallery-msg .gallery-three p {
@@ -389,12 +458,9 @@ body{
     height: 60px;
     font: normal normal normal 15px "Microsoft YaHei UI";
     color: #797979;
-    position: absolute;
-    margin-top: 12px;
-    left: 50%;
-    margin-left: -245px;
     text-align: center;
-    bottom: 51px;
+    position: relative;
+    margin: 0 auto;
 }
 
 .gallery .gallery-image-group-1 {
@@ -430,7 +496,7 @@ body{
     background-color: #000;
     padding-left: 15px;
 }
-
+/* footer区 */
 .footer {
     width: 100%;
     height: 80px;
