@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>datalist编程练习</title>
+</head>
+<body>
+<label>
+  <input list="p_lang" placeholder="请选择学习的语言">
+</label>
+<!-- 可以是单标签，如果是双标签并在中间添加值，值和value不同时，在chrome浏览器中展示两个值，但在firefox中展示一个值 -->
+<datalist id="p_lang" >
+    <option value="Java">
+    <option value="C++">
+    <option value="JavaScript">
+    <option value=".NET">
+    <option value="C#">
+  </datalist>
+</body>
+</html>

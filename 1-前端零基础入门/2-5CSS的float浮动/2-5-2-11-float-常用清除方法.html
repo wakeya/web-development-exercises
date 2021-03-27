@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>float</title>
+  <style type="text/css">
+    .container {
+      width: 500px;
+      /* height:500px; */
+      border: 2px solid #333;
+      /* 方法二：增加overflow:hidden;zoom:1兼容IE */
+      /* overflow: hidden;
+      zoom:1;
+      */
+    }
+
+    .box01 {
+      width: 100px;
+      height: 100px;
+      background: blue;
+      color: #fff;
+      float: left;
+      /* clear:left; */
+    }
+
+    .box02 {
+      width: 100px;
+      height: 100px;
+      background: red;
+      color: #fff;
+      float: left;
+      /* clear:left; */
+    }
+
+    .box03 {
+      width: 100px;
+      height: 100px;
+      background: orange;
+      color: #fff;
+      float: left;
+      /* clear:left; */
+    }
+
+    /* 清除浮动方法一 */
+    /* .clear{
+    clear:both;
+  } */
+    .box04 {
+      width: 500px;
+      height: 200px;
+      background: green;
+    }
+
+    /* 清除浮动影响方法三：增加一个空的看不见的盒子，主要用于清除浮动 */
+    .clearfix:after{
+      content: '.';
+      height: 0;
+      display: block;
+      visibility: hidden;
+      clear: both;
+    }
+    /* 兼容IE浏览器 */
+    .clearfix{
+      zoom:1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container clearfix">
+    <div class="box01">11111</div>
+    <div class="box02">22222</div>
+    <div class="box03">33333</div>
+    <!-- 清除浮动的影响的方法一：添加空盒子，清空浮动 -->
+    <!-- <div class="clear"></div> -->
+  </div>
+  <div class="box04">44444</div>
+</body>
+
+</html>

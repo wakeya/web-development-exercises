@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>文本属性</title>
+  <style media="screen">
+    /* 注意text-align属性只对块级元素起作用 */
+    .left{
+      text-align:left;
+    }
+    .center{
+      text-align:center;
+    }
+    .right{
+      text-align:right;
+    }
+    .justify{
+      text-align:justify;
+    }
+    /* 在div块级容器中的居中 */
+    .textAlign{
+      text-align:center;
+    }
+    .textAlign p{
+      width:50%;
+      margin:0 auto;/* 这样就保证了在ie chrome firefox浏览器的效果一致 */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 方式一，使用p标签的align属性进行设置 -->
+  <!-- <p align="left">文本左对齐：HTML 指的是超文本标记语言（Hyper Text Markup Language）,
+    HTML不是一种编程语言，而是一种标记语言（markup language）,标记语言是一套标记标签（markup tag）。
+    HTML 指的是超文本标记语言（Hyper Text Markup Language）,
+    HTML不是一种编程语言，而是一种标记语言（markup language）,标记语言是一套标记标签（markup tag）。
+  </p>
+  <p align="center">文本居中对齐：HTML 指的是超文本标记语言（Hyper Text Markup Language）,
+    HTML不是一种编程语言，而是一种标记语言（markup language）,标记语言是一套标记标签（markup tag）。
+    HTML 指的是超文本标记语言（Hyper Text Markup Language）,
+    HTML不是一种编程语言，而是一种标记语言（markup language）,标记语言是一套标记标签（markup tag）。
+  </p>
+  <p align="right">文本右对齐：HTML 指的是超文本标记语言（Hyper Text Markup Language）,
+    HTML不是一种编程语言，而是一种标记语言（markup language）,标记语言是一套标记标签（markup tag）。
+    HTML 指的是超文本标记语言（Hyper Text Markup Language）,
+    HTML不是一种编程语言，而是一种标记语言（markup language）,标记语言是一套标记标签（markup tag）。
+  </p>
+  <p align="justify">文本两端对齐：HTML 指的是超文本标记语言（Hyper Text Markup Language）,
+    HTML不是一种编程语言，而是一种标记语言（markup language）,标记语言是一套标记标签（markup tag）。
+    HTML 指的是超文本标记语言（Hyper Text Markup Language）,
+    HTML不是一种编程语言，而是一种标记语言（markup language）,标记语言是一套标记标签（markup tag）。
+  </p> -->
+
+  <!-- 方式二：使用内部或外部CSS样式进行设置 -->
+  <p class="left">文本左对齐：HTML 指的是超文本标记语言（Hyper Text Markup Language）,
+    HTML不是一种编程语言，而是一种标记语言（markup language）,标记语言是一套标记标签（markup tag）。
+    HTML 指的是超文本标记语言（Hyper Text Markup Language）,
+    HTML不是一种编程语言，而是一种标记语言（markup language）,标记语言是一套标记标签（markup tag）。
+  </p>
+  <p class="center">文本居中对齐：HTML 指的是超文本标记语言（Hyper Text Markup Language）,
+    HTML不是一种编程语言，而是一种标记语言（markup language）,标记语言是一套标记标签（markup tag）。
+    HTML 指的是超文本标记语言（Hyper Text Markup Language）,
+    HTML不是一种编程语言，而是一种标记语言（markup language）,标记语言是一套标记标签（markup tag）。
+  </p>
+  <p class="right">文本右对齐：HTML 指的是超文本标记语言（Hyper Text Markup Language）,
+    HTML不是一种编程语言，而是一种标记语言（markup language）,标记语言是一套标记标签（markup tag）。
+    HTML 指的是超文本标记语言（Hyper Text Markup Language）,
+    HTML不是一种编程语言，而是一种标记语言（markup language）,标记语言是一套标记标签（markup tag）。
+  </p>
+  <p class="justify">文本两端对齐：HTML 指的是超文本标记语言（Hyper Text Markup Language）,
+    HTML不是一种编程语言，而是一种标记语言（markup language）,标记语言是一套标记标签（markup tag）。
+    HTML 指的是超文本标记语言（Hyper Text Markup Language）,
+    HTML不是一种编程语言，而是一种标记语言（markup language）,标记语言是一套标记标签（markup tag）。
+  </p>
+  <div class="textAlign">
+    <p>指定宽度html：HTML 指的是超文本标记语言（Hyper Text Markup Language）,
+      HTML不是一种编程语言，而是一种标记语言（markup language）,标记语言是一套标记标签（markup tag）。
+      HTML 指的是超文本标记语言（Hyper Text Markup Language）,
+      HTML不是一种编程语言，而是一种标记语言（markup language）,标记语言是一套标记标签（markup tag）。
+    </p>
+  </div>
+</body>
+
+</html>
